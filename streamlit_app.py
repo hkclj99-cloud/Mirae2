@@ -117,8 +117,8 @@ else:
     # RSI
     fig.add_trace(go.Scatter(x=df.index, y=df['RSI'], line=dict(color='purple', width=1), name='RSI'), row=2, col=1)
     fig.add_hrect(y0=30, y1=70, row=2, col=1, fillcolor="gray", opacity=0.1, line_width=0)
-    fig.add_hline(y=30, row=2, col=1, line_dash="drive", line_color="gray")
-    fig.add_hline(y=70, row=2, col=1, line_dash="drive", line_color="gray")
+    fig.add_hline(y=30, row=2, col=1, line_dash="dash", line_color="gray")
+    fig.add_hline(y=70, row=2, col=1, line_dash="dash", line_color="gray")
 
     # RMI
     fig.add_trace(go.Scatter(x=df.index, y=df['RMI'], line=dict(color='blue', width=1), name='RMI'), row=3, col=1)
